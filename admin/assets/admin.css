@@ -1,0 +1,111 @@
+.cf:before, .ztabs-block .ztab-content:before,
+.cf:after,
+.ztabs-block .ztab-content:after {
+  content: " ";
+  /* 1 */
+  display: table;
+}
+
+.cf:after, .ztabs-block .ztab-content:after {
+  clear: both;
+}
+
+.cf, .ztabs-block .ztab-content {
+  *zoom: 1;
+}
+
+.compact-table {
+  width: auto;
+}
+.compact-table td {
+  padding: 4px 10px;
+}
+
+section {
+  width: auto;
+  height: auto;
+  text-align: inherit;
+  margin: inherit;
+  padding: inherit;
+}
+
+.vertical-align-middle {
+  vertical-align: middle;
+}
+
+.ztabs-block .ztab {
+  cursor: pointer;
+}
+.ztabs-block .ztab-content {
+  display: none;
+  -webkit-box-sizing: 'border-box';
+          box-sizing: 'border-box';
+}
+.ztabs-block .ztab-content.active {
+  display: block;
+}
+.ztabs-block .ztabs {
+  width: 100%;
+  margin-bottom: 34px;
+  border-collapse: collapse;
+  font-size: 0;
+  -webkit-box-sizing: 'border-box';
+          box-sizing: 'border-box';
+}
+.ztabs-block .ztabs > .ztab {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px 10px 7px;
+  background-color: #ddd;
+  margin-right: 5px;
+  -webkit-box-sizing: 'border-box';
+          box-sizing: 'border-box';
+  border-radius: 3px;
+  -webkit-box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.2);
+}
+.ztabs-block .ztabs > .ztab.active {
+  color: #fff;
+  background-color: #0073aa;
+}
+.ztabs-block .ztabs > .ztab:not(.active):hover {
+  background: #c0ebff;
+}
+.ztabs-block > .ztab-content {
+  padding: 0 13px 13px;
+  display: none;
+}
+.ztabs-block > .ztab-content.active {
+  display: block;
+}
+
+.output-block {
+  font-size: 14px;
+  position: relative;
+  overflow: auto;
+  height: 500px;
+  border: 1px solid #aaa;
+  background: #fcfcfc;
+  padding: 24px 15px 10px;
+}
+.output-block.loading > :last-child {
+  position: relative;
+}
+.output-block.loading > :last-child:after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../images/ajax-loader.gif");
+}
+
+/*# sourceMappingURL=admin.css.map */
